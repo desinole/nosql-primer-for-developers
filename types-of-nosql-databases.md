@@ -6,8 +6,9 @@
 - Document
 - Graph
 - Column-oriented
-- Hybrid
+- Multi-Model
 
+<mark>**Note: [Dbdb.io](https://Dbdb.io) is a great resource to compare different databases.**</mark>
 ## Key-Value databases
 
 ![Example of records in a key-value database](/img/key-value.png)
@@ -69,5 +70,3 @@ The past decade with the rise of the cloud has seen an explosion in databases th
 Multi-model databases are polyglot - Document, graph, relational, and key–value models are examples of data models that may be supported by a multi-model database. Single integrated backend means similar operations for setup, maintenance and security (Authentication/authorization). While there are specialized multi-model databases like Cosmos DB, most database systems are organically becoming multi-model. For instance, SQL server can store data as text, XML, JSON and so on
 
 Some examples of multi-model databases are Azure Cosmos DB, OrientDB, Arango DB and so on.
-
-<mark>**Note: [Dbdb.io](https://Dbdb.io) is a great resource to compare different databases.**</mark>
