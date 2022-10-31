@@ -21,7 +21,7 @@ Schema-free data aka loose schema indicates a lack of strict adherence to a part
 
 ### Why data normalization is expensive?
 
-![Why data normalization is expensive - joins](/img/denormalization-normalization.png)
+![Why data normalization is expensive - joins](/img/Denormalization-normalization.png)
 
 *Caption: Why data normalization is expensive - joins*
 
@@ -35,7 +35,7 @@ Since joins can be inefficient, particularly at scale, we attempt to denormalize
 
 ### One-to-many relationships
 
-![Denormalization - handling one-to-many relationships](/img/denormalization-normalization.png)
+![Denormalization - handling one-to-many relationships](/img/Denormalization-one-to-many.png)
 
 *Caption: Denormalization - handling one-to-many relationships*
 
@@ -43,7 +43,7 @@ Modeling one-to-many is straightforward. Embed child records as array in parent 
 
 ### Many-to-many relationships
 
-![Denormalization - handling many-to-many relationships](/img/denormalization-normalization.png)
+![Denormalization - handling many-to-many relationships](/img/Denormalization-many-to-many.png)
 
 *Caption: Denormalization - handling many-to-many relationships*
 
@@ -51,7 +51,7 @@ Denormalization involving many-to-many records involves more careful considerati
 
 ### Embedding vs Referencing
 
-![Embedding relationships](/img/denormalization-normalization.png)
+![Embedding relationships](/img/Denormalization-embedding.png)
 
 *Caption: Embedding relationships*
 
@@ -63,7 +63,7 @@ The disadvantage with this approach is that since embedded data is repeated acro
 
 This is often used for fairly static data like profile data or product listing info.
 
-![Referencing relationships](/img/denormalization-normalization.png)
+![Referencing relationships](/img/Denormalization-referencing.png)
 
 *Caption: Referencing relationships*
 
