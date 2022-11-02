@@ -10,7 +10,6 @@
 ### CAP Theorem - Pick 2 of 3
 
 ![CAP Theorem](/img/cap-theorem.png)
-
 *Caption: Consistency, Availability, Partition Tolerance - pick 2 of 3*
 
 Due to physics, Consistency of data becomes a matter of trade-off in NoSQL databases. Like all distributed systems, NoSQL databases are subject to the CAP Theorem also named Brewer's theorem, which states that it is impossible for a distributed data store to simultaneously provide more than two out of the following three guarantees:
@@ -26,11 +25,9 @@ Due to physics, Consistency of data becomes a matter of trade-off in NoSQL datab
 The CAP theorem implies that in the presence of a network partition, we must choose between consistency and availability. Given that networks are not completely reliable, we must tolerate partitions in a distributed system. Fortunately, though, we get to choose the tradeoffs when a partition does occur. This is known as the **PACELC theorem** which states: in case of network partitioning (P) in a distributed computer system, one must choose between availability (A) and consistency (C, but else (E), even when the system is running normally in the absence of partitions, one has to choose between latency (L) and consistency (C).
 
 ![Sacrifice Availability for Consistency](/img/sacrifice-availability.png)
-
 *Caption: Sacrifice Availability for Consistency*
 
 ![Sacrifice Consistency for Availability](/img/sacrifice-consistency.png)
-
 *Caption: Sacrifice Consistency for Availability*
 
 In this scenario, the system has updated one node successfully, but before updating the second node, the system experienced a network partition. In order to provide consistency aka, read retrieves the latest write, if the system is unable to access the nodes with the new data due to network partitioning, it returns an error.
@@ -40,7 +37,6 @@ In this scenario, the system has updated one node successfully, but before updat
 ### 3V's of Big Data
 
 ![3V's of Big Data](/img/3v.png)
-
 *Caption: 3V's of Big Data - volume, velocity, variety*
 
 Discussing NoSQL requires a discussion on the 3Vs of big data – Volume, Velocity and Variety.

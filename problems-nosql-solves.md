@@ -12,7 +12,6 @@ Largely NoSQL databases solve
 ### The Problem
 
 ![Impedance Mismatch](/img/impedance.png)
-
 *Caption: 1 record across 3 tables and 6 different rows*
 
 In this case, to write one User object, using database normalization techniques, we write the data across 6 different rows in 3 different tables. Similarly, to read a User record, we would have to read 6 rows spread across 3 tables. Now this was a simple example.
@@ -22,7 +21,6 @@ In even moderately complex systems, read or write operations for the object coul
 ### Solving Impedance Mismatch with NoSQL
 
 ![Eliminate Impedance Mismatch](/img/eliminate-impedance-mismatch.png)
-
 *Caption: store the record as a single JSON document*
 
 In comparison, by employing a documented-oriented NoSQL database instead of a relational database, the same object is stored as a JSON document.
@@ -38,7 +36,6 @@ This method of storage:
 ### Vertical Scaling causes severe constraints
 
 ![Eliminate Impedance Mismatch](/img/vertical.png)
-
 *Caption: vertical scale systems hit constraints early*
 
 Database systems must be able to scale to match peak system loads i.e. total number of concurrent connections.
@@ -48,7 +45,6 @@ Traditional methods of scaling involve increasing your system hardware, aka, sca
 ### NoSQL system scale horizontally
 
 ![Eliminate Impedance Mismatch](/img/horizontal.png)
-
 *Caption: horizontal systems can hypothetically keep scaling*
 
 NoSQL databases, on the other hand, are designed to store data and distribute load across multiple nodes. These nodes are usually commodity hardware optimized to perform for data up to certain sizes (10GB, for instance). 

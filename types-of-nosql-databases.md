@@ -9,10 +9,10 @@
 - Multi-Model
 
 <mark>**Note: [Dbdb.io](https://Dbdb.io) is a great resource to compare different databases.**</mark>
+
 ## Key-Value databases
 
 ![Example of records in a key-value database](/img/key-value.png)
-
 *Caption: Example of records in a key-value database*
 
 Data is inserted as key-value pairs and retrieved using the key. This type of lookup using keys is a O(1) lookup. The partition key, in addition to the record key enables the fast lookups.
@@ -26,7 +26,6 @@ Some examples of Key-Value NoSQL databases: Dynamo, MemcacheDB, Redis, Riak and 
 ## Document databases
 
 ![Example of records in a document database](/img/document.png)
-
 *Caption: Example of records in a document database*
 
 Document-oriented databases store data in the form of documents which encapsulate and encode data in some standard formats or encodings like XML, YAML, JSON, BSON. Each document can be accessed using a unique key like a key-value store. However, documented-oriented databases usually also offer an API or query language to query and retrieves documents.
@@ -40,7 +39,6 @@ Some examples of Document-oriented NoSQL databases: Apache CouchDB, RavenDB, Mon
 ## Graph databases
 
 ![Example of records in a graph database](/img/graph.png)
-
 *Caption: Example of records in a graph database*
 
 Data in real world is naturally connected. Traditional data modeling focuses on entities. Graph databases model the rich relationships between entities by allowing you to model both entities and relationships naturally.
@@ -52,7 +50,6 @@ Some examples of Graph NoSQL databases: Neo4j, InfiniteGraph, Azure Cosmos DB Gr
 ## Column-oriented databases
 
 ![Example of records in a column database](/img/column.png)
-
 *Caption: Example of records in a column database*
 
 Column-oriented aka wide-column stores such as Cassandra and HBase are optimized for queries over large datasets, and store columns of data together, instead of rows. 

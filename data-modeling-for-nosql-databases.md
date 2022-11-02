@@ -12,7 +12,6 @@ And finally we will talk about modeling relationships – many-to-many, one-to-m
 ## Schema-free data
 
 ![Example of schema-free data](/img/schema-free.png)
-
 *Caption: Example of schema-free data*
 
 Schema-free data aka loose schema indicates a lack of strict adherence to a particular schema. Data might be similar but not same. Caveat: resist throwing completely disparate schema together because it messes with items like partition keys which will determine performance. Schema-free data reflects real life where you can get data from multiple sources
@@ -22,7 +21,6 @@ Schema-free data aka loose schema indicates a lack of strict adherence to a part
 ### Why data normalization is expensive?
 
 ![Why data normalization is expensive - joins](/img/Denormalization-normalization.png)
-
 *Caption: Why data normalization is expensive - joins*
 
 In relational design, significant focus is placed around describing the entity and its relation to other entities first. After the relations are finalized, items impacting performance like indexes are designed later. When the schema is normalized, data redundancy is reduced, and storage becomes more efficient.
@@ -36,7 +34,6 @@ Since joins can be inefficient, particularly at scale, we attempt to denormalize
 ### One-to-many relationships
 
 ![Denormalization - handling one-to-many relationships](/img/Denormalization-one-to-many.png)
-
 *Caption: Denormalization - handling one-to-many relationships*
 
 Modeling one-to-many is straightforward. Embed child records as array in parent records. For instance, states array is embedded in parent country document.
@@ -44,7 +41,6 @@ Modeling one-to-many is straightforward. Embed child records as array in parent 
 ### Many-to-many relationships
 
 ![Denormalization - handling many-to-many relationships](/img/Denormalization-many-to-many.png)
-
 *Caption: Denormalization - handling many-to-many relationships*
 
 Denormalization involving many-to-many records involves more careful consideration. In the above example, Students have many-to-many relationship with Courses. So, a student may have multiple courses and a course may have multiple students.
@@ -52,7 +48,6 @@ Denormalization involving many-to-many records involves more careful considerati
 ### Embedding vs Referencing
 
 ![Embedding relationships](/img/Denormalization-embedding.png)
-
 *Caption: Embedding relationships*
 
 In this method, we select one of the entities as the parent document and embed an array of instances of the other entity. The many-to-many relationship means that some of the embedded instance will be repeated across different parent document, i.e., redundant data across records.
@@ -64,7 +59,6 @@ The disadvantage with this approach is that since embedded data is repeated acro
 This is often used for fairly static data like profile data or product listing info.
 
 ![Referencing relationships](/img/Denormalization-referencing.png)
-
 *Caption: Referencing relationships*
 
 In this method, we select one of the entities as the parent document and embed an array of references. This approach requires that the parent document and the related entities to be stored as separate documents in the database and use an approach like primary key-foreign key to perform the referencing.
